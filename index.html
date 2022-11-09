@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="HM-01">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <title>모이젠 홈</title>
+  </head>
+
+  <body>
+    <nav class="container">
+      <div class="justify-content-around align-items-center row pb-3">
+        <a href="./home/Home.html" class="col-md-2 col-3"> <img src="./image/LOGO.png" style="width:100%" class="navbar-brand"> </a>
+        <form class="d-flex align-items-center col-5">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <a class="nav-link active col-md-1 col-3" aria-current="page" href="./account/Login.html"> 로그인 </a>                
+      </div>
+      <div class="d-flex justify-content-around aling-items-center mx-auto home-nav py-2">
+          <a class="nav-link active" aria-current="page" href="./home/Home.html"> HOME </a>                
+          <a class="nav-link active" aria-current="page" href="./project/board.html"> 모이젠 게시판 </a>                
+          <a class="nav-link active" aria-current="page" href="#"> 커뮤니티 </a>                
+      </div>
+    </nav>
+
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <img src="./image/banner1.jpg" class="d-block w-100" alt="..">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/banner2.jpg" class="d-block w-100" alt="..">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/Frame 3.jpg" class="d-block w-100" alt="..">
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="container mt-5">
+        <div>
+          <h5> 오늘의 모이젠 </h5>
+        </div>
+        <div class="row justify-content-around gx-3">
+          <div class="col-md-4 text-center"> 
+            <div class="card mt-3 px-2">
+              <img src="./image/TEST1.jpeg" class="card-img-top mt-3" alt="..">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center"> 
+            <div class="card mt-3 px-2">
+              <img src="./image/TEST1.jpeg" class="card-img-top mt-3" alt="..">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center"> 
+            <div class="card mt-3 px-2">
+              <img src="./image/TEST1.jpeg" class="card-img-top mt-3" alt="..">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div>
+          <h5> 신규 모이젠 </h5>
+        </div>
+        
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card mt-3 px-2">
+                <img src="./image/TEST1.jpeg" class="card-img-top mt-3" alt="..">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text"> 장소 : </p>
+                  <p class="card-text"> 일시 : </p>
+                  <p class="card-text"> 간단소개 : </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mt-3 px-2">
+                <img src="./image/TEST1.jpeg" class="card-img-top mt-3" alt="..">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text"> 장소 : </p>
+                  <p class="card-text"> 일시 : </p>
+                  <p class="card-text"> 간단소개 : </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mt-3 px-2">
+                <img src="./image/TEST1.jpeg" class="card-img-top mt-3" alt="..">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text"> 장소 : </p>
+                  <p class="card-text"> 일시 : </p>
+                  <p class="card-text"> 간단소개 : </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mt-3 px-2">
+                <img src="./image/TEST1.jpeg" class="card-img-top mt-3" alt="..">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text"> 장소 : </p>
+                  <p class="card-text"> 일시 : </p>
+                  <p class="card-text"> 간단소개 : </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card mt-3 px-2">
+                <img src="./image/TEST1.jpeg" class="card-img-top mt-3" alt="..">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text"> 장소 : </p>
+                  <p class="card-text"> 일시 : </p>
+                  <p class="card-text"> 간단소개 : </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="d-flex justify-content-center my-5">
+        <a href="#" class="footer-link"> 이용약관 </a>
+        <span class="footer-link"> | </span>
+        <a href="#" class="footer-link"> 개인정보처리방침 </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

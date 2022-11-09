@@ -1,0 +1,285 @@
+@media (min-width:900px){
+    .container{
+        width:900px;
+    }
+}
+
+.test-box{
+    border:1px solid red;
+}
+
+.container{
+    margin-top:1rem;
+}
+
+.nav-link {
+    color:#aaaaaa;
+    font-weight:700;
+}
+
+.home-nav{
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+
+.search-icon{
+    display:inline-block;
+    position:relative;
+    right:30px;
+}
+
+.carousel-control-prev{
+    position:absolute;
+    left:0;
+}
+
+.carousel-control-next{
+    position:absolute;
+    right:0;
+}
+
+@media screen and (max-width:480px){
+    div h5{
+        text-align:center;
+    }
+}
+
+.footer-link{
+    color:#aaaaaa;
+    padding:0rem 0.5rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+#input-content{
+    margin:0 auto;
+}
+
+.login-logo-area{
+    max-width:460px;
+    margin:60px 0px 54px;
+    padding:2rem 5rem;
+}
+
+.signup-logo-area{
+    max-width:460px;
+    margin:15px 0px 30px;
+    padding:2rem 5rem;
+}
+
+@media screen and (min-width:500px){
+    #input-content{
+        width:460px;
+    }
+}
+
+.check{
+    width:65%;
+}
+
+.btn-small{
+    height:24px;
+    padding:0rem 0.75rem;
+    line-height:0px;
+    margin-left:5px;
+}
+
+.search-button{
+    position:relative;
+    top:0px;
+    right:0px;
+    left:0px;
+}
+
+#filter-title{
+    padding:11px 0px 8px;
+    font-size:13px;
+    font-weight:600;
+}
+.filter-box{
+    height:41px;
+    border-top:#f4f4f6 solid 1px;
+    border-right:#f4f4f6 solid 1px;
+}
+
+.filter-menu{
+    padding:9 3px;
+    float:left;
+    position:relative;
+    list-style:none;
+}
+
+#filter-list{
+    background-color:#525f78;
+    color:#fff;
+    font-weight:300px;
+}
+
+#filter-link{
+    font-size:13px;
+    text-decoration: none;
+    color:#000;
+    padding:0 11px;
+}
+
+.filter-selected-box{
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.filter-selected-cancel{
+    text-decoration:none;
+    color:#6b6b6a;
+    font-size:14px;
+}
+
+.filter-selected-cancel:before {
+    background-image: url(https://ssl.pstatic.net/shoppingsearch/static/pc/pc-221031-141651/img/sprite/png/spSearch.png);
+    background-size: 263px 240px;
+    background-position: -239px -129px;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    vertical-align: top;
+    content: "";
+}
+
+.filter-selected-cancel:after {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 7px 0 0 12px;
+    background-color: #d8d8d8;
+    vertical-align: top;
+    content: "";
+}
+
+#filter-selected{
+    padding:0 11px;
+    height: 25px;
+    margin-left: 15px;
+    font-size:14px;
+    font-weight: 500;
+    color: #00a832;
+    text-decoration: none;
+}
+
+.post-filter-select-box{
+    border-bottom:1px solid #d8d8d8;
+}
+
+.post-filter-select{
+    text-decoration:none;
+    color:#6b6b6a;
+    font-size:14px;
+    margin-left:7px;
+}
+
+.post-filter-select2{
+    text-decoration:none;
+    color:#6b6b6a;
+    font-size:14px;
+    margin-left:8px;
+}
+
+.post-filter-select:after {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 7px 0 0 12px;
+    background-color: #d8d8d8;
+    vertical-align: top;
+    content: "";
+}
+
+.post-box{
+    border-bottom:1px solid #d8d8d8;
+}
+
+.post-content{
+    margin-top:0.3rem;
+
+}
+
+#post-contentin{
+    margin: 5px 0;
+    font-size:13px;
+}
+
+#post-pages{
+    display:inline-block;
+    text-align:cneter;
+    padding:3px 9px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:700;
+    color:#333;
+    margin:1px;
+    border:1px;
+}
+
+#post-pages-selected{
+    display:inline-block;
+    text-align:cneter;
+    padding:3px 9px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:700;
+    color:#333;
+    margin:1px;
+    border:1px solid #aaaaaa;
+}
+
+.picture-box{
+    display:flex;
+    align-items:center;
+    height:95px;
+    width:95px;
+    border:1px solid #aaaaaa;
+    margin-right:5px;
+}
+
+.write-placeholder{
+    text-align:center;
+}
+
+.write-box{
+    width:100%;
+    height:34px;
+    border:1px solid #aaaaaa;
+    padding-left:0.5rem;
+    color:#999;
+}
+
+.abc{
+
+    width:100%;
+    height:34px;
+    border:1px solid #aaaaaa;
+    padding-left:0.5rem;
+    color:#999;
+}
+
+#date-option{
+    width:100%;
+    height:34px;
+    border:1px solid #aaaaaa;
+    padding-left:0.5rem;
+    color:#999;
+}
+
+.main-content{
+    width:100%;
+    height:465px;
+    word-wrap:break-word;
+}
+
+@media (max-width: 768px){
+.main-content{
+    height:250px;
+}}
+
+#post-content{
+    margin:0 auto;
+}
