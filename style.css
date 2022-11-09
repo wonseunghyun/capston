@@ -231,13 +231,20 @@
     border:1px solid #aaaaaa;
 }
 
-.picture-box{
+.picture-input-box{
     display:flex;
+    justify-content:center;
     align-items:center;
-    height:95px;
-    width:95px;
-    border:1px solid #aaaaaa;
+    height:100px;
+    width:100px;
     margin-right:5px;
+}
+
+#picture-box{
+    display:flex;
+    height:100%;
+    width:100%;
+    overflow:auto;
 }
 
 .write-placeholder{
