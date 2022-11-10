@@ -1,31 +1,19 @@
-var swiper = new Swiper('.swiper', {
-    slidesPerView: 10, //레이아웃 뷰 개수 
-    spaceBetween: 30, //위 slidesPerview 여백
-    slidesPerView: 4,
-    centeredSlides: 'ture',
-    autoplay:{
-        dleay:2500,
-        disableOnInteraction:false,
-    },
-    loop: true,
-    loopAdditionalSlides:1,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'fraction',
-      clickable: true,
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-});
-
+let swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints:{
+    900:{slidesPerView:3,}},
+  autoplay:{
+    delay:2500,
+    disableOnInteraction:false,},
+  loop:false,
+  loopAdditionalSlides: 1,
+  pagination:{
+    el:".swiper-pagination",
+    clickable:true,
+  },
+  navigation:{
+    nextEl:".swiper-button-next",
+    prevEl:".swiper-button-prev",
+  },
+  });
