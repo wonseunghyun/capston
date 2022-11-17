@@ -24,14 +24,14 @@
             <div class="d-flex justify-content-around aling-items-center mx-auto home-nav py-2">
                 <a class="nav-link active" aria-current="page" href="../home/Home.html"> HOME </a>                
                 <a class="nav-link active" aria-current="page" href="../project/board.html"> 모이젠 게시판 </a>                
-                <a class="nav-link active" aria-current="page" href="../comunity/comu.html"> 커뮤니티 </a>                
+                <a class="nav-link active" aria-current="page" href="../comunity/comu.html"> 마이페이지 </a>                
             </div>
         </nav>
 
         <main class="container">
             <div class="py-3 d-flex" style="border-bottom:1px solid red; background-color: blanchedalmond;">
                 <div class="me-5 ms-3">
-                    <img src="../image/TEST1.jpeg" style="height:100px; width:150px;">
+                    <img src="../image/TEST1.jpeg" style="height:200px; width:300px;">
                 </div>
                 <div>
                     <div>
@@ -40,8 +40,8 @@
                     <div>
                         <h3> 프로젝트 제목 </h3>
                     </div>
-                    <div width="100%" align="right">
-                        <button type="button" class="btn btn-dark"> 신청하기 </button>
+                    <div>
+                        <button type="button" class="btn btn-dark apply"> 신청하기 </button>
                     </div>
                 </div>
             </div>
@@ -78,13 +78,123 @@
                         </tr>
                         <tr>
                             <td colspan="5">
-                                <div style="width:300px; height:300px; border:1px solid black;"> 지도 대체 </div> </td>
+                                <iframe id="map" style="width:auto; height:300px; border:1px solid black;"> 지도 대체 </iframe> </td>
                         </tr>
                     </table>
                 </div>
             </div>
 
+            <div class="mt-4">
+                <h3 class="text-align-center"> 
+                    본문
+                </h3>
+                <div> 
+                    <textarea style="width:100%; height:200px;"> 본문 내용 </textarea>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <h3> 매칭현황 </h3>
+                <table>
+                    <tr>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            신청자
+                        </td>
+                        <td>
+                            이메일
+                        </td>
+                        <td>
+                            신청 일자
+                        </td>
+                        <td>
+                            진행 상태
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            신청자
+                        </td>
+                        <td>
+                            이메일
+                        </td>
+                        <td>
+                            신청 일자
+                        </td>
+                        <td>
+                            진행 상태
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            jeju@jejunu.ac.kr
+                        </td>
+                        <td>
+                            2022.10.16
+                        </td>
+                        <td>
+                            승인
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            national@jejunu.ac.kr
+                        </td>
+                        <td>
+                            2022.10.18
+                        </td>
+                        <td>
+                            신청
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            univ@jejunu.ac.kr
+                        </td>
+                        <td>
+                            2022.10.18
+                        </td>
+                        <td>
+                            반려
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
         </main>
     </body>
-      
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a26b9c3916caa8ad7e568e44d5f1a313"></script>
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
+
 </html>

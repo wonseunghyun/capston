@@ -336,3 +336,9 @@ td{
     border : 1px solid #444444; 
     text-align:center;
 }
+
+.apply{
+    position:absolute;
+    right:20%;
+    top:340px;
+}
