@@ -342,3 +342,10 @@ td{
     right:20%;
     top:340px;
 }
+
+.apply-list{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
