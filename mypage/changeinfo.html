@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="MP-PE-02">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            function setThumbnail(event) {
+                for (let image of event.target.files) {
+                let reader = new FileReader();
+
+                reader.onload = function(event) {
+                    let oldNode = document.getElementById("profile-picture-child");
+                    let img = document.createElement("img");
+                    img.setAttribute("src", event.target.result);
+                    img.setAttribute("id", "profile-picture-child");
+                    img.style.width = 100 +"px";
+                    img.style.height = 100 + "px";
+                    img.style.borderRadius = 50 + "px";
+                    document.querySelector("span#profile-picture").replaceChild(img, oldNode);
+                };
+
+                console.log(image);
+                reader.readAsDataURL(image);
+                }
+            }
+        </script>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="../style.css" rel="stylesheet" type="text/css"/>
+        <title> 회원가입 </title>
+      </head>
+      <body>
+        <div class="container">
+            <div class="signup-logo-area mx-auto" style="margin-bottom:0px;">
+                <a href="../home/Home.html" > <img src="../image/LOGO.png" class="img-fluid"> </a>
+            </div>
+            <div id="input-content" style="text-align:center;">
+                <span id="profile-picture"> <img id="profile-picture-child" src="../image/face.jpeg" style="width:100px; height:100px;">  </span>
+                <p> 최대 1MB 파일만 업로드 가능합니다. </p>
+                <label for="image" > 
+                    <span class="picture-change"> 프로필 사진 업로드 </span>
+                    <input type="file" id="image" accept="image/*" style="display:none;" onchange="setThumbnail(event);"/>
+                </label>
+            </div>
+            <div id="input-content" class="container-fluid">
+                <div>
+                    <span> 이메일 </span>
+                    <div style="padding-left:0.75rem;" class="mb-2 form-control">
+                        jejucapston2022@gmail.com
+                    </div>
+                </div>
+                <div>
+                    <label for="basic-url" class="form-label"> 비밀번호 </label>
+                    <div class="input-group mb-2">
+                        <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="새로운 비밀번호를 입력해 주세요.">
+                    </div>
+                    <label for="basic-url" class="form-label"> 비밀번호 확인 </label>
+                    <div class="input-group mb-2">
+                        <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="새로운 비밀번호를 다시 한 번 입력해 주세요.">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div style="width:70%;">
+                        <span> 이름 </span>
+                        <div style="padding-left:0.75rem;" class="mb-2 form-control"> 강승현 </div>                    
+                    </div>
+
+                    <div style="width:25%;">
+                        <span> 성별 </span>
+                        <div style="padding-left:0.75rem;" class="mb-2 form-control"> 남자 </div>                    
+                    </div>
+                </div>
+
+                <div>
+                    <span> 연락처 </span>
+                    <div style="padding-left:0.75rem;" class="mb-2 form-control">
+                        010-1234-1234
+                    </div>
+                </div>
+
+                <div>
+                    <label for="basic-url" class="form-label"> 생년월일 </label>
+                    <div class="input-group mb-2">
+                        <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3" value="1996-08-05">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-evenly mt-5 mb-5">
+                    <a type="button" class="btn btn-outline-secondary px-5" href="../home/Home.html"> 취소 </a>
+                    <a type="button" class="btn btn-outline-secondary px-5" href="../home/Home.html"> 수정 </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      </body>
+</html>

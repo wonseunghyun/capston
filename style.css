@@ -279,6 +279,16 @@
     margin-right:5px;
 }
 
+.picture-change{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:120%;
+    border:1px solid #aaaaaa;
+    border-radius:5px;
+    cursor: pointer;
+}
+
 #picture-box{
     display:flex;
     height:100%;
@@ -332,6 +342,14 @@
 .postview-table{
     width:100%;
     border : 1px solid #444444;
+}
+
+.postview-click{
+    cursor:pointer;
+}
+
+.postview-click:hover{
+    text-decoration: underline;
 }
 
 .postview-td{
