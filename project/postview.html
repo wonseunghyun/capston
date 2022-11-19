@@ -24,14 +24,14 @@
             <div class="justify-content-around align-items-center row pb-3">
                 <a href="../home/Home.html" class="col-md-2 col-3"> <img src="../image/LOGO.png" style="width:100%" class="navbar-brand"> </a>
                 <form class="d-flex align-items-center col-5">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-                <a class="nav-link active col-md-1 col-3" aria-current="page" href="../account/Login.html"> 로그인 </a>                
+                    <span class="material-icons search-icon">search</span>
+                    <input class="form-control me-2 search-box" type="search" aria-label="Search">                </form>
+                <a class="nav-link active col-md-2 col-3" aria-current="page" href="../account/Login.html"> 로그인 </a>                
             </div>
             <div class="d-flex justify-content-around aling-items-center mx-auto home-nav py-2">
                 <a class="nav-link active" aria-current="page" href="../home/Home.html"> HOME </a>                
                 <a class="nav-link active" aria-current="page" href="../project/board.html"> 모이젠 게시판 </a>                
-                <a class="nav-link active" aria-current="page" href="../comunity/comu.html"> 마이페이지 </a>                
+                <a class="nav-link active" aria-current="page" href="../mypage/mypage.html"> 마이페이지 </a>                
             </div>
         </nav>
 
@@ -40,26 +40,24 @@
                 <div class="me-5 ms-3">
                     <img src="../image/TEST1.jpeg" style="height:200px; width:300px;">
                 </div>
-                <div>
+                <div style="max-width:500px; width:100%;">
                     <div>
                         종목명
                     </div>
                     <div>
                         <h3> 프로젝트 제목 </h3>
                     </div>
-                    <div>
+                    <div style="margin-top:110px;">
                         <button type="button" class="btn btn-dark apply" onclick="showapply();"> 신청하기 </button>
                     </div>
                 </div>
             </div>
-            <div width="100%" class="d-flex mt-5"> 
-                <div class="px-5 me-5" style="border-right:1px solid red;">
-                    <p> 작성자 정보 </p>
-                    <div class="d-flex-row justify-content-center align-items-center"> 
-                        <img src="../image/TEST1.jpeg" style="height:100px; width:100px;">
-                        <p style="text-align:center;"> 곽태원 </p>
-                        <button type="button" class="btn btn-dark"> 프로필 보기 </button>
-                    </div>
+            <div width="100%" class="d-flex mt-5">
+                <div class="d-flex-row px-5 me-5" style="border-right:1px solid red;">
+                    <p style="text-align:center; font-size:18px;"> 작성자 정보 </p>
+                    <img src="../image/face.jpeg" style="height:100px; width:100px;">
+                    <p style="text-align:center;"> 곽태원 </p>
+                    <button type="button" class="btn btn-dark" style="width:100%; margin:auto;"> 프로필 보기 </button>
                 </div>
 
                 <div>
@@ -101,7 +99,7 @@
 
             <div class="my-5">
                 <h3> 매칭현황 </h3>
-                <table>
+                <table class="postview-table">
                     <tr>
                         <td>
                             NO
@@ -202,5 +200,14 @@
 
         var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
     </script>
+
+    <style>
+        td{
+        width:150px;
+        padding : 5px 10px;
+        border : 1px solid #444444; 
+        text-align:center;
+        }
+    </style>
 
 </html>
