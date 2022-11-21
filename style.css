@@ -345,11 +345,13 @@
 }
 
 .postview-click{
-    cursor:pointer;
+    text-decoration:none;
+    color:black;
 }
 
 .postview-click:hover{
     text-decoration: underline;
+    color:black;
 }
 
 .postview-td{
