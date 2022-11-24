@@ -13,13 +13,29 @@
 }
 
 .nav-link {
-    color:#aaaaaa;
+    color:white;
     font-weight:700;
 }
 
+.login-link{
+    color:#333333;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.login-link:hover{
+    text-decoration:underline;
+}
+
 .home-nav{
-    border-top:1px solid #cccccc;
-    border-bottom:1px solid #cccccc;
+    stroke: rgba(170,174,175,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+    background-color:rgba(0, 121, 117, 1);
+
 }
 
 .search-icon{
@@ -49,32 +65,21 @@
 }
 
 .swi-picture{
-    width:70%;
-    height:200px;
-    max-height:200px;
-    overflow:hidden;
+    width:286px;
+    height:180px;
 }
 
-.swi-picture{
-    max-width:100%;
-    height:auto;
-    display:block;
+.card-text {
+    text-decoration: none;
+    color:black;
 }
 
-@media screen and (width:900px){
-    .swi-picture{
-        width:30%;
-        max-height:200px;
-        height:auto;
-    }
+.card-text:hover{
+    text-decoration: underline;
 }
 
 .swiper-button-prev{
-    right:1rem;
-}
-
-.swiper-button-next{
-    left:1rem;
+    right:20rem;
 }
 
 .footer-link{
