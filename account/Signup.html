@@ -16,25 +16,41 @@
             </div>
             <div id="input-content" class="container-fluid">
                 <div>
-                    <label for="basic-url" class="form-label"> 이메일 </label>
+                    <label for="email" class="form-label"> 이메일 </label>
                     <div class="d-flex justify-content-between mb-2">
-                        <input type="email" class="form-control check" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="email" class="form-control check" id="email" aria-describedby="basic-addon3">
                         <button type="button" class="btn btn-outline-secondary">이메일 확인</button>
                     </div>
-                    <label for="basic-url" class="form-label"> 이메일 인증 </label>
+                    <label for="email-check" class="form-label"> 이메일 인증 </label>
                     <div class="d-flex justify-content-between mb-2">
-                        <input type="email" class="form-control check" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="email" class="form-control check" id="email-check" aria-describedby="basic-addon3">
                         <button type="button" class="btn btn-outline-secondary"> 이메일 인증 </button>
                     </div>
                 </div>
                 <div>
-                    <label for="basic-url" class="form-label"> 비밀번호 </label>
+                    <label for="password" class="form-label"> 비밀번호 </label>
                     <div class="input-group mb-2">
-                        <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="password" class="form-control" id="password" aria-describedby="basic-addon3">
                     </div>
-                    <label for="basic-url" class="form-label"> 비밀번호 확인 </label>
+                    <label for="password-check" class="form-label"> 비밀번호 확인 </label>
                     <div class="input-group mb-2">
-                        <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="password" class="form-control" id="password-check" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="me-2" style="width:70%;">
+                        <label for="name" class="form-label"> 이름 </label>
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" id="name" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+                    <div class="ms-2">
+                        <label for="sex" class="form-label" style="width:100%;"> 성별 </label>
+                        <select id="sex" name="event" class="write-box" style="width:100%; height:38px; border-radius:0.25rem;">
+                            <option value="">-- 선택해주세요 --</option>
+                            <option value="man"> 남자 </option>
+                            <option value="woman"> 여자 </option>
+                        </select>
                     </div>
                 </div>
                 <div>
