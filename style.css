@@ -84,7 +84,6 @@
 
 .card-a:hover{
     color:black;
-    text-decoration:underline;
 }
 
 .card-title{
@@ -117,6 +116,20 @@
 }
 
 .swiper-button-next{
+    position: relative;
+    background-color: white;
+    font-size:20px;
+    border:0px;
+}
+
+.swiper-button-prev2{
+    position: relative;
+    background-color: white;
+    font-size:20px;
+    border:0px;
+}
+
+.swiper-button-next2{
     position: relative;
     background-color: white;
     font-size:20px;
