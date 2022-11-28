@@ -39,7 +39,6 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
     background-color:rgba(0, 121, 117, 1);
-
 }
 
 .search-icon{
@@ -73,13 +72,36 @@
     height:180px;
 }
 
-.card-body {
+.card-a {
     text-decoration:none;
     color:black;
 }
 
-.card-body:hover{
-    text-decoration: underline;
+.card-a:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+.card-title{
+    font-size:120%;
+    font-weight: 400;
+}
+
+.card-text:hover{
+    text-decoration:none;
+}
+
+.card-hot{
+    color:white;
+    font-weight:500;
+    font-size:110%;
+    background-color: red;
+    border-radius: 50px;
+    text-align:center;
+    width:50px;
+    position:absolute;
+    right:10px;
+    top:10px;
 }
 
 .swiper-button-prev{
@@ -162,7 +184,7 @@
 }
 
 #filter-list{
-    background-color:#525f78;
+    background-color:rgba(0, 121, 117, 1);
     color:#fff;
     font-weight:300px;
 }
@@ -401,10 +423,6 @@
         padding : 5px 10px;
         border : 1px solid #444444; 
         text-align:center;
-}
-
-.apply{
-    float:right;
 }
 
 .apply-list{

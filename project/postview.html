@@ -36,70 +36,66 @@
         </nav>
 
         <main class="container">
-            <div class="py-3 d-flex" style="border-bottom:1px solid red; background-color: blanchedalmond;">
-                <div class="me-5 ms-3">
-                    <img src="../image/TEST1.jpeg" style="height:200px; width:300px;">
-                </div>
-                <div style="max-width:500px; width:100%;">
-                    <div>
-                        종목명
+            <div class="d-flex justify-content-around mt-5">
+                <div class="py-3 d-flex" style="background-color: rgba(23,140,78,0.11)">
+                    <div class="me-5 ms-3">
+                        <img src="../image/TEST1.jpeg" style="height:200px; width:300px;">
                     </div>
                     <div>
-                        <h3> 프로젝트 제목 </h3>
-                    </div>
-                    <div style="margin-top:110px;">
-                        <button type="button" class="btn btn-dark apply" onclick="showapply();"> 신청하기 </button>
+                        <div>
+                            종목명
+                        </div>
+                        <div>
+                            <h3> 프로젝트 제목 </h3>
+                        </div>
+                        <table class="tablestyle2">
+                            <tr>
+                                <td>
+                                    신청 마감일자
+                                </td>
+                                <td>
+                                    2022. 11. 30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    경기 일자
+                                </td>
+                                <td>
+                                    2022. 12. 01
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    경기 위치
+                                </td>
+                                <td>
+                                    사라봉 구장
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <div width="100%" class="d-flex mt-5">
-                <div class="d-flex-row px-5 me-5" style="border-right:1px solid red;">
+                <div class="d-flex-row px-5">
                     <p style="text-align:center; font-size:18px;"> 작성자 정보 </p>
                     <img src="../image/face.jpeg" style="height:100px; width:100px;">
                     <p style="text-align:center;"> 곽태원 </p>
                     <button type="button" class="btn btn-dark" style="width:100%; margin:auto;"> 프로필 보기 </button>
                 </div>
-
-                <div>
-                    <h3> 경기 정보 </h3>
-                    <table>
-                        <tr bgcolor="#ffffc7">
-                            <td> 신청 마감 일자 </td>
-                            <td> 경기 일자 </td>
-                            <td> 필요 인원 </td>
-                            <td> 신청 인원 </td>
-                            <td> 매칭 인원 </td>
-                        </tr>    
-                        <tr> 
-                            <td> 2022.11.15 </td>
-                            <td> 2022.11.15 </td>
-                            <td> 3 </td>
-                            <td> 4 </td>
-                            <td> 5 </td>
-                        </tr>
-                        <tr bgcolor="#ffffc7"> 
-                            <td colspan="5"> 경기장 지도 </td>
-                        </tr>
+            </div>
+            <div class="my-5">
+                <div class="d-flex justify-content-between">
+                    <h3> 매칭현황 </h3>
+                    <table class="tablestyle3">
                         <tr>
-                            <td colspan="5">
-                                <div id="map" style="width:100%; height:400px; margin:auto;"></div></td>
+                            <td>모집 인원</td>
+                            <td style="width:35px;">5명</td>
+                            <td>현재 인원</td>
+                            <td style="width:35px;">2명</td>
                         </tr>
                     </table>
                 </div>
-            </div>
-
-            <div class="mt-4">
-                <h3 class="text-align-center"> 
-                    본문
-                </h3>
-                <div style="width:100%; height:200px; border:1px solid black; padding-left:5px;"> 
-                    본문내용
-                </div>
-            </div>
-
-            <div class="my-5">
-                <h3> 매칭현황 </h3>
-                <table class="postview-table">
+                <table class="postview-table tablestyle1">
                     <tr>
                         <td>
                             NO
@@ -187,6 +183,23 @@
                     </tr>
                 </table>
             </div>
+            <div>
+                <h3> 경기장 위치 </h3>
+                <div id="map" style="border:1px solid red; width:100%; height:400px; margin:auto;"></div></td>
+            </div>
+            
+
+            <div class="mt-4">
+                <h3 class="text-align-center"> 
+                    본문
+                </h3>
+                <div style="width:100%; height:200px; border:1px solid black; padding-left:5px;"> 
+                    본문내용
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-dark my-5 justify-self-center" onclick="showapply();"> 신청하기 </button>
+
 
         </main>
     </body>
@@ -202,11 +215,21 @@
     </script>
 
     <style>
-        td{
+        .tablestyle1 td{
         width:150px;
         padding : 5px 10px;
         border : 1px solid #444444; 
         text-align:center;
+        }
+
+        .tablestyle2 td{
+            width: 120px;
+            padding: 5px 10px 5px 0px;
+        }
+
+        .tablestyle3 td{
+            width:70px;
+            text-align:end;
         }
     </style>
 
